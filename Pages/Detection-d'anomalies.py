@@ -35,7 +35,7 @@ st.set_page_config(
     layout="wide",
 )
 
-data = pd.read_csv('Orange-Voip-app/Data/Nombre total de sessions-actives_OR.csv')
+data = pd.read_csv('Data/Nombre total de sessions-actives_OR.csv')
 
 
 data=preprocess_data(data)
@@ -49,7 +49,7 @@ df['value']=StandardScaler().fit_transform(np.array(df['value']).reshape(-1,1))
 
 col1, mid, col2 = st.columns([1,1,15])
 with col1:
-    st.image('Orange-Voip-app/images/Orange.svg.png', width=100)
+    st.image('images/Orange.svg.png', width=100)
 with col2:
     st.title("Dashboard - Détection d'anomalie ")
 
