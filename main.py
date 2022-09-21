@@ -19,7 +19,7 @@ st.set_page_config(
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
-image = Image.open('appmultipages/pages/images/Orange.svg.png')
+image = Image.open('images/Orange.svg.png')
 st.image(image, width = 100)
 
 
@@ -34,7 +34,7 @@ st.sidebar.markdown(new_title1, unsafe_allow_html=True)
 
 
 
-image1 = Image.open('appmultipages/pages/images/ML.jpeg')
+image1 = Image.open('images/ML.jpeg')
 
 
 st.image(image1, caption='Intelligence artificielle')
