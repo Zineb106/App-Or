@@ -34,7 +34,7 @@ st.set_page_config(
 
 col1, mid, col2 = st.columns([1,1,10])
 with col1:
-    st.image('Orange-Voip-app/images/Orange.svg.png', width=100)
+    st.image('images/Orange.svg.png', width=100)
 with col2:
     st.title("Dashboard - Prévision")
 
@@ -47,7 +47,7 @@ df=None
 
 # Début du traitemet
 if uploaded_file is None:
-   uploaded_file=pd.read_csv('Orange-Voip-app/Data/Connect Pro - Entreprises_Groupes_Users-data-2022-09-16 09 54 33.csv')
+   uploaded_file=pd.read_csv('Data/Connect Pro - Entreprises_Groupes_Users-data-2022-09-16 09 54 33.csv')
    df=uploaded_file
    st.subheader("Démonstration sur le nombre d'utilisateurs Connect Pro ")
    
