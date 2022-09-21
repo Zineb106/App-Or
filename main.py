@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 
-with open("appmultipages/style.css") as f:
+with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 image = Image.open('appmultipages/pages/images/Orange.svg.png')
